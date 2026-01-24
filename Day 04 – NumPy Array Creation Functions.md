@@ -1,0 +1,156 @@
+# 📘 Day 04 – NumPy Array Creation Functions
+
+This day focuses on NumPy array creation methods, which are used to efficiently generate data for analysis, testing, and machine learning workflows.
+
+## 🎯 Learning Objectives
+
+Understand different NumPy array creation functions
+
+Know when to use initialized vs uninitialized arrays
+
+Learn the difference between arange() and linspace()
+
+Create identity matrices using eye()
+
+### 1️⃣ array() – Create Array from Python Data
+🔹 Definition
+
+Creates a NumPy array from Python lists or tuples.
+
+🔹 Syntax
+np.array(object)
+
+🔹 Example
+import numpy as np
+
+arr = np.array([1, 2, 3, 4])
+print(arr)
+
+🔹 Output
+[1 2 3 4]
+
+🔹 Key Points
+
+Converts Python data into NumPy array
+
+Can create 1D, 2D, or multi-dimensional arrays
+
+### 2️⃣ zeros() – Array Filled with Zeros
+🔹 Definition
+
+Creates an array filled completely with 0s.
+
+🔹 Syntax
+np.zeros(shape)
+
+🔹 Example
+np.zeros((2, 3))
+
+🔹 Output
+[[0. 0. 0.]
+ [0. 0. 0.]]
+
+🔹 Use Case
+
+Initializing arrays
+
+Placeholder data
+
+### 3️⃣ ones() – Array Filled with Ones
+🔹 Definition
+
+Creates an array filled completely with 1s.
+
+🔹 Example
+np.ones((3, 2))
+
+🔹 Output
+[[1. 1.]
+ [1. 1.]
+ [1. 1.]]
+
+### 4️⃣ empty() – Uninitialized Array
+🔹 Definition
+
+Creates an array without initializing values.
+
+🔹 Example
+np.empty((2, 2))
+
+⚠ Important Note
+
+Contains random (garbage) values
+
+Faster than zeros() and ones()
+
+### 5️⃣ arange() – Create Range of Values
+🔹 Definition
+
+Generates values within a given range (similar to Python range()).
+
+🔹 Syntax
+np.arange(start, stop, step)
+
+🔹 Example
+np.arange(1, 10, 2)
+
+🔹 Output
+[1 3 5 7 9]
+
+🔹 Use Case
+
+Index generation
+
+Loop-free sequences
+
+### 6️⃣ linspace() – Evenly Spaced Numbers
+🔹 Definition
+
+Creates evenly spaced numbers between two values.
+
+🔹 Syntax
+np.linspace(start, stop, num)
+
+🔹 Example
+np.linspace(0, 1, 5)
+
+🔹 Output
+[0.   0.25 0.5  0.75 1.  ]
+
+🔹 Difference Between arange() and linspace()
+arange()	linspace()
+Uses step size	Uses number of values
+Endpoint may be excluded	Endpoint always included
+### 7️⃣ eye() – Identity Matrix
+🔹 Definition
+
+Creates a square identity matrix with 1s on the diagonal.
+
+🔹 Syntax
+np.eye(n)
+
+🔹 Example
+np.eye(3)
+
+🔹 Output
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+
+🔹 Use Case
+
+Linear algebra
+
+Machine learning models
+
+##📌 Summary Table
+
+| Function    | Purpose                         |
+|------------|----------------------------------|
+| `array()`  | Convert Python data to NumPy     |
+| `zeros()`  | Initialize with zeros            |
+| `ones()`   | Initialize with ones             |
+| `empty()`  | Fast uninitialized array         |
+| `arange()` | Range with step size             |
+| `linspace()` | Evenly spaced values           |
+| `eye()`    | Identity matrix                  |
