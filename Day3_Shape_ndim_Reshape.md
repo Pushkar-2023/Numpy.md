@@ -1,6 +1,6 @@
+# Day 03 – Shape, ndim & Reshape in NumPy
 
 
-# 📘 Day 03 – Shape, ndim & Reshape in NumPy
 
 This document covers **array dimensions, shape manipulation, and reshaping techniques** in NumPy. These concepts are **very important for Data Analysis, Machine Learning, and Interviews**.
 
