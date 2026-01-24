@@ -1,5 +1,7 @@
 # 📘 Day 04 – NumPy Array Creation Functions
 
+---
+
 ## 🎯 Learning Objectives
 - Understand different NumPy array creation functions
 - Know when to use initialized vs uninitialized arrays
@@ -32,7 +34,7 @@ Converts Python data into a NumPy array
 
 Can create 1D, 2D, or multi-dimensional arrays
 
-##2️⃣ zeros() – Array Filled with Zeros
+2️⃣ zeros() – Array Filled with Zeros
 🔹 Definition
 Creates an array filled completely with 0s.
 
@@ -54,7 +56,7 @@ Initializing arrays
 
 Placeholder data
 
-##3️⃣ ones() – Array Filled with Ones
+3️⃣ ones() – Array Filled with Ones
 🔹 Definition
 Creates an array filled completely with 1s.
 
@@ -68,7 +70,7 @@ Copy code
 [[1. 1.]
  [1. 1.]
  [1. 1.]]
-##4️⃣ empty() – Uninitialized Array
+4️⃣ empty() – Uninitialized Array
 🔹 Definition
 Creates an array without initializing values.
 
@@ -81,7 +83,7 @@ Contains random (garbage) values
 
 Faster than zeros() and ones()
 
-##5️⃣ arange() – Create Range of Values
+5️⃣ arange() – Create Range of Values
 🔹 Definition
 Generates values within a given range (similar to Python range()).
 
@@ -102,7 +104,7 @@ Index generation
 
 Loop-free sequences
 
-##6️⃣ linspace() – Evenly Spaced Numbers
+6️⃣ linspace() – Evenly Spaced Numbers
 🔹 Definition
 Creates evenly spaced numbers between two values.
 
@@ -123,7 +125,7 @@ arange()	linspace()
 Uses step size	Uses number of values
 Endpoint may be excluded	Endpoint always included
 
-##7️⃣ eye() – Identity Matrix
+7️⃣ eye() – Identity Matrix
 🔹 Definition
 Creates a square identity matrix with 1s on the diagonal.
 
@@ -146,7 +148,7 @@ Linear algebra
 
 Machine learning models
 
-##📌 Summary Table
+📌 Summary Table
 Function	Purpose
 array()	Convert Python data to NumPy
 zeros()	Initialize with zeros
@@ -155,5 +157,3 @@ empty()	Fast uninitialized array
 arange()	Range with step size
 linspace()	Evenly spaced values
 eye()	Identity matrix
-
-✅ Author
